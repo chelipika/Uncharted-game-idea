@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .system-block {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .subsystem {
+            background: #f8f9fa;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .element {
+            background: white;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 10px 0;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #dee2e6;
+        }
+        .title {
+            font-weight: bold;
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin: 2px;
+        }
+        .political { background: #ffecec; }
+        .economic { background: #ecffec; }
+        .social { background: #ecf6ff; }
+        .military { background: #fff3ec; }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Система управления страной</h1>
+
+        <!-- Политическая система -->
+        <div class="system-block">
+            <h2>Политическая система</h2>
+            
+            <div class="subsystem">
+                <h3>Ветви власти</h3>
+                <div class="grid">
+                    <div class="card">
+                        <div class="title">Законодательная власть</div>
+                        <div class="description">
+                            - Парламент (двухпалатный)<br>
+                            - Законотворчество<br>
+                            - Контроль исполнительной власти<br>
+                            - Бюджетный контроль
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Исполнительная власть</div>
+                        <div class="description">
+                            - Правительство<br>
+                            - Министерства<br>
+                            - Местные администрации<br>
+                            - Реализация законов
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Судебная власть</div>
+                        <div class="description">
+                            - Верховный суд<br>
+                            - Региональные суды<br>
+                            - Местные суды<br>
+                            - Специальные трибуналы
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsystem">
+                <h3>Политические партии</h3>
+                <div class="flex-container">
+                    <span class="tag political">Консервативная</span>
+                    <span class="tag political">Либеральная</span>
+                    <span class="tag political">Социалистическая</span>
+                    <span class="tag political">Зеленая</span>
+                    <span class="tag political">Националистическая</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Экономическая система -->
+        <div class="system-block">
+            <h2>Экономическая система</h2>
+            
+            <div class="subsystem">
+                <h3>Налоговая система</h3>
+                <div class="grid">
+                    <div class="card">
+                        <div class="title">Прямые налоги</div>
+                        <div class="description">
+                            - Подоходный налог<br>
+                            - Корпоративный налог<br>
+                            - Налог на имущество<br>
+                            - Налог на землю
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Косвенные налоги</div>
+                        <div class="description">
+                            - НДС<br>
+                            - Акцизы<br>
+                            - Таможенные пошлины<br>
+                            - Налог с продаж
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsystem">
+                <h3>Экономические институты</h3>
+                <div class="grid">
+                    <div class="card">
+                        <div class="title">Центральный банк</div>
+                        <div class="description">
+                            - Монетарная политика<br>
+                            - Эмиссия валюты<br>
+                            - Контроль банков
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Фондовая биржа</div>
+                        <div class="description">
+                            - Торговля акциями<br>
+                            - Облигации<br>
+                            - Финансовые инструменты
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Социальная система -->
+        <div class="system-block">
+            <h2>Социальная система</h2>
+            
+            <div class="subsystem">
+                <h3>Социальные институты</h3>
+                <div class="grid">
+                    <div class="card">
+                        <div class="title">Образование</div>
+                        <div class="description">
+                            - Школы<br>
+                            - Университеты<br>
+                            - Профессиональное образование
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Здравоохранение</div>
+                        <div class="description">
+                            - Больницы<br>
+                            - Поликлиники<br>
+                            - Медицинские центры
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Социальное обеспечение</div>
+                        <div class="description">
+                            - Пенсии<br>
+                            - Пособия<br>
+                            - Социальная помощь
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Безопасность -->
+        <div class="system-block">
+            <h2>Система безопасности</h2>
+            
+            <div class="subsystem">
+                <h3>Правоохранительные органы</h3>
+                <div class="grid">
+                    <div class="card">
+                        <div class="title">Полиция</div>
+                        <div class="description">
+                            - Патрульная служба<br>
+                            - Криминальная полиция<br>
+                            - Спецподразделения
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Спецслужбы</div>
+                        <div class="description">
+                            - Разведка<br>
+                            - Контрразведка<br>
+                            - Антитеррор
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsystem">
+                <h3>Вооруженные силы</h3>
+                <div class="grid">
+                    <div class="card">
+                        <div class="title">Сухопутные войска</div>
+                        <div class="description">
+                            - Пехота<br>
+                            - Бронетанковые<br>
+                            - Артиллерия
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">ВВС</div>
+                        <div class="description">
+                            - Истребительная авиация<br>
+                            - Бомбардировочная авиация<br>
+                            - ПВО
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">ВМФ</div>
+                        <div class="description">
+                            - Надводный флот<br>
+                            - Подводный флот<br>
+                            - Морская авиация
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Управление кризисами -->
+        <div class="system-block">
+            <h2>Управление кризисами</h2>
+            
+            <div class="subsystem">
+                <h3>Типы кризисов</h3>
+                <div class="flex-container">
+                    <span class="tag political">Политические протесты</span>
+                    <span class="tag economic">Экономический кризис</span>
+                    <span class="tag social">Социальные волнения</span>
+                    <span class="tag military">Военные конфликты</span>
+                </div>
+            </div>
+
+            <div class="subsystem">
+                <h3>Методы решения</h3>
+                <div class="grid">
+                    <div class="card">
+                        <div class="title">Политические</div>
+                        <div class="description">
+                            - Переговоры<br>
+                            - Реформы<br>
+                            - Компромиссы
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Экономические</div>
+                        <div class="description">
+                            - Стимулирование экономики<br>
+                            - Налоговые льготы<br>
+                            - Инвестиционные программы
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="title">Силовые</div>
+                        <div class="description">
+                            - Правоохранительные меры<br>
+                            - Чрезвычайное положение<br>
+                            - Военное положение
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
