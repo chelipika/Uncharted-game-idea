@@ -103,7 +103,7 @@ def main(page: Page):
 
 
 
-    def start_attack():
+    async def start_attack():
         '''Запуск атаки'''
 
         def button_cancel(e):
@@ -117,8 +117,8 @@ def main(page: Page):
         change_config('attack', 'True')
         olo = [998907932779, 998913590996]
         for nuuu in olo:
-            print("Stated calling")
-            start_async_attacks(nuuu, 1)
+            print("Started calling")
+            await start_async_attacks(nuuu, 1)
         change_config('attack', 'False')
         attack_window.open = False
         page.update()
