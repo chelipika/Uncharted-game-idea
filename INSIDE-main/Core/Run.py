@@ -27,8 +27,7 @@ async def async_attacks(number):
 
 
 
-def start_async_attacks(number, replay):
+async def start_async_attacks(number, replay):
     '''Запуск бомбера'''
-
     for _ in range(int(replay)):
-        run(async_attacks(number))
+        await async_attacks(number)
